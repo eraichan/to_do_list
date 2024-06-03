@@ -1,0 +1,185 @@
+.to_do_list {
+  width: 100%;
+  text-align: center;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(8, 8, 8);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  border-radius: 100px;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: calc(100% - 22px);
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 60px;
+  border: 1px solid;
+  margin: 5px;
+  width: 100%;
+  max-width: 150px;
+  box-sizing: border-box;
+}
+
+button.addButton {
+  background-color: #0078ff;
+  color: white;
+  border: none;
+}
+
+section {
+  padding: 20px;
+}
+
+section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+section ul li {
+  display: flex;
+  align-items: center;
+  background-color: #e7e7e7;
+  border-radius: 20px;
+  margin: 5px 0;
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+section ul li .task-title {
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+}
+
+section ul li .task-description {
+  text-align: left;
+  font-size: 14px;
+  color: #555;
+  width: 100%;
+}
+
+section ul li input[type="text"] {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+section ul li input[type="checkbox"] {
+  margin-right: 0px;
+  width: 60px;
+  height: 20px;
+  cursor: pointer;
+}
+
+section ul li button {
+  background: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 60px;
+  margin: 5px 0;
+}
+
+section ul li span {
+  text-align: left;
+  width: 100%;
+  margin: 5px 0;
+}
+
+section ul li button:nth-of-type(2) {
+  background: #ff4d4d;
+}
+
+.filterButtons {
+  display: flex;
+}
+
+.filterButtons button.selected {
+  background-color: #0078ff;
+  color: white;
+}
+
+.task-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.task-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+li .Description {
+  text-align: left;
+  font-size: 14px;
+  color: #555;
+  width: 100%;
+}
+.desclass {
+  text-align: left;
+  font-size: 15px;
+  color: #555;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .filterButtons {
+    flex-direction: column;
+  }
+  .filterButtons button {
+    min-width: 100%;
+  }
+  li {
+    flex-direction: column;
+  }
+  .titleclass {
+    text-align: center;
+  }
+  .desclass {
+    text-align: center;
+  }
+}
